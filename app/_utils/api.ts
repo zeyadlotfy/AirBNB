@@ -1,6 +1,6 @@
 export const getExplore = async () => {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/b/4G1G`);
+    const res = await fetch(`https://www.jsonkeeper.com/b/4G1G`);
     const exploreData = await res.json();
     return exploreData;
   } catch (error) {
@@ -9,7 +9,7 @@ export const getExplore = async () => {
 };
 export const getLive = async () => {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/b/VHHT`);
+    const res = await fetch(`https://www.jsonkeeper.com/b/VHHT`);
     const liveData = await res.json();
     return liveData;
   } catch (error) {
@@ -18,7 +18,7 @@ export const getLive = async () => {
 };
 export const getSearchResult = async () => {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/b/5NPS`);
+    const res = await fetch(`https://www.jsonkeeper.com/b/5NPS`);
     const searchResultData = await res.json();
     return searchResultData;
   } catch (error) {
